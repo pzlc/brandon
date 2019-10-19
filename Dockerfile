@@ -1,4 +1,4 @@
-FROM pzlc/openjdk11
+FROM pzlc/openjdk11:v1
 RUN dnf upgrade --refresh --assumeyes
 ENV PAYARAVERSION=5.193.1
 RUN mkdir --parents /usr/local
