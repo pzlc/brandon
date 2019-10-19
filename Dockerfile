@@ -8,4 +8,5 @@ RUN wget --quiet \
 RUN cd /usr/local && unzip -q payara-${PAYARAVERSION}.zip
 ENV PAYARAHOME=/usr/local/payara5
 ENV PATH=$PAYARAHOME/glassfish/bin:$PATH
+RUN asadmin delete-domain domain1
 
