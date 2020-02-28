@@ -1,6 +1,6 @@
 FROM pzlc/openjdk11:v4
 RUN dnf upgrade --refresh --assumeyes
-ENV PAYARAVERSION=5.194
+ENV PAYARAVERSION=5.201
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
   "https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/${PAYARAVERSION}/payara-${PAYARAVERSION}.zip" \
