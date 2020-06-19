@@ -1,4 +1,4 @@
-FROM pzlc/openjdk11:v4
+FROM pzlc/openjdk11:v5.fc
 RUN dnf upgrade --refresh --assumeyes
 ENV PAYARAVERSION=5.2020.2
 RUN mkdir --parents /usr/local
