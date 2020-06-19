@@ -1,4 +1,4 @@
-FROM pzlc/openjdk11:v5.al
+FROM pzlc/openjdk11:v5.1.al
 RUN apk update
 RUN apk upgrade
 ENV PAYARAVERSION=5.2020.2
