@@ -1,5 +1,6 @@
-FROM pzlc/openjdk11:v4
-RUN dnf upgrade --refresh --assumeyes
+FROM pzlc/openjdk11:v5.al
+RUN apk update
+RUN apk upgrade
 ENV PAYARAVERSION=5.2020.2
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
