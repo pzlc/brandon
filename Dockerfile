@@ -1,5 +1,6 @@
-FROM pzlc/openjdk11:v4
-RUN dnf upgrade --refresh --assumeyes
+FROM pzlc/openjdk11:v5.d
+RUN apt-get update --assume-yes
+RUN apt-get dist-upgrade --assume-yes
 ENV PAYARAVERSION=5.2020.2
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
