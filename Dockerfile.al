@@ -2,7 +2,7 @@ FROM pzlc/openjdk11:v6.al
 RUN apk update
 RUN apk upgrade
 RUN apk add gnupg
-ENV PAYARAVERSION=5.2020.2
+ENV PAYARAVERSION=5.2020.3
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
   "https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/${PAYARAVERSION}/payara-${PAYARAVERSION}.zip" \
