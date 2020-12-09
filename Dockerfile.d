@@ -1,4 +1,4 @@
-FROM pzlc/openjdk11:v8.d
+FROM pzlc/openjdk11:v9.d
 RUN apt-get update --assume-yes
 RUN apt-get dist-upgrade --assume-yes
 RUN apt-get install gnupg2 --assume-yes
