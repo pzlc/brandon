@@ -1,7 +1,7 @@
 FROM pzlc/openjdk11:v9.fc
 RUN dnf upgrade --refresh --assumeyes
 RUN dnf install --assumeyes gnupg2
-ENV PAYARAVERSION=5.2020.7
+ENV PAYARAVERSION=5.2021.1
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
   "https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/${PAYARAVERSION}/payara-${PAYARAVERSION}.zip" \
