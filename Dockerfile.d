@@ -2,7 +2,7 @@ FROM pzlc/openjdk11:v11.d
 RUN apt-get update --assume-yes
 RUN apt-get dist-upgrade --assume-yes
 RUN apt-get install gnupg2 --assume-yes
-ENV PAYARAVERSION=5.2021.1
+ENV PAYARAVERSION=5.2021.2
 RUN mkdir --parents /usr/local
 RUN wget --quiet \
   "https://search.maven.org/remotecontent?filepath=fish/payara/distributions/payara/${PAYARAVERSION}/payara-${PAYARAVERSION}.zip" \
