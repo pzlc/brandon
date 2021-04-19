@@ -1,4 +1,4 @@
-FROM pzlc/openjdk11:v9.al
+FROM pzlc/openjdk11:v11.al
 RUN apk update
 RUN apk upgrade
 RUN apk add gnupg
